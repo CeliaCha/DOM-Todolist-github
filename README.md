@@ -11,7 +11,7 @@
 * Run `parcel index.html`
 
 
-## @Todo :
+## Todo :
 * Permettre à l'utilisateur d'ajouter une tâche
 * Permettre à l'utilisateur de supprimer une tâche
 * Permettre à l'utilisateur de marquer une tâche comme faite/à faire (dans les deux sens)
