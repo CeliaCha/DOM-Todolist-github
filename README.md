@@ -7,8 +7,8 @@
 
 ## Development
 
-* Run `parcel index.html`
 * Créer une branche à votre nom.
+* Run `parcel index.html`
 
 ## Todo
 
