@@ -1,0 +1,19 @@
+h1 {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.container  {
+  border: 1px solid black;
+  min-height: 100px;
+  width: 60%;
+  margin: 3% auto 3% ;
+}
+
+.ui-el {
+  text-align: center;
+  width: 80%;
+  margin: 3% auto 3% ;
+}
+
