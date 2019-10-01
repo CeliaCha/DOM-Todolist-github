@@ -6,5 +6,3 @@
 - Permettre à l'utilisateur de rechercher une tâche par chaîne de caractèresxs
 - Bonus : ajouter du LocalStorage pour conserver les données dans le navigateur.
 */
-
-console.log('sfsf')
