@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Todolist Simplon</title>
-  <link rel="stylesheet" href="main.scss">
-</head>
-<body>
-  <main>
-  <h1>Todo List Simplon</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Todolist Simplon</title>
+    <link rel="stylesheet" href="main.scss" />
+  </head>
+  <body>
+    <main>
+      <h1>Todo List Simplon</h1>
 
-  <section>
+      <section>
+        <!-- Interface utilisateur  -->
+        <div class="container">
+          <div class="ui-el">
+            <input id="taskName" type="text" />
+            <button id="addTaskButton">Ajouter tâche</button>
+          </div>
 
-    <!-- Interface utilisateur  -->
-    <div class="container">
-        <div class="ui-el">
-          <input id="taskName" type="text"/>
-          <button id="addTaskButton">Ajouter tâche</button>
-        </div>
-      
-        <div class ="ui-el">
-          <input id="searchInput" type="text"/>
-          <button id="searchButton">Rechercher</button>
-        </div>
+          <div class="ui-el">
+            <input id="searchInput" type="text" />
+            <button id="searchButton">Rechercher</button>
+          </div>
 
-        <div class="ui-el">
+          <div class="ui-el">
             <button id="sortButton">Trier</button>
+          </div>
         </div>
-    </div>
 
-    <!-- Liste de tâches  -->
-    <div class="container">
-        <ul id="tasks" class="tasks__list">
-        </ul>
-    </div>
-  </section>
-</main>
-  <script src="main.js"></script>
-</body>
+        <!-- Liste de tâches  -->
+        <div class="container">
+          <ul id="tasks" class="tasks__list"></ul>
+        </div>
+      </section>
+    </main>
+    <script src="main.js"></script>
+  </body>
 </html>
