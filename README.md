@@ -8,7 +8,7 @@
 ## Development
 
 * Create a branch with your name
-* DON'T use Parcel
+* Run `parcel index.html`
 
 
 ## @Todo :
