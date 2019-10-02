@@ -9,26 +9,37 @@
 const taskname = document.getElementById('taskName')
 const addTaskButton = document.getElementById('addTaskButton')
 const tasklist = document.getElementById('tasklist')
-const tasks = []
+let tasks = []
 
 const addTodo = () => {
-    const inputValue = taskname.value
-    tasks.push(inputValue)
-
+  const todoObject = {}
+  todoObject.id = Date.now()
+  todoObject.name = taskname.value
+  tasks.push(todoObject)
 }
 
 const printTodos = () => {
-    tasklist.innerHTML = ''
-    tasks.forEach(task => {
-        const li = document.createElement('li')
-        li.innerHTML = task
-        tasklist.appendChild(li)
-        taskname.value = ''
+  tasklist.innerHTML = ''
+  tasks.forEach(task => {
+    const li = document.createElement('li')
+    const deleteBtn = document.createElement('button')
+    const textSpan = document.createElement('span')
+    textSpan.innerText = task.name
+    deleteBtn.innerText = 'Supprimer'
+    deleteBtn.id = task.id
+    li.appendChild(textSpan)
+    li.appendChild(deleteBtn)
+    tasklist.appendChild(li)
+    taskname.value = ''
+
+    deleteBtn.addEventListener('click', () => {
+      tasks = tasks.filter(el => el.id !== task.id)
+      printTodos()
     })
+  })
 }
 
-
 addTaskButton.addEventListener('click', () => {
-    addTodo()
-    printTodos()
+  addTodo()
+  printTodos()
 })
