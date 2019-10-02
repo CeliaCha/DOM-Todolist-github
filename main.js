@@ -31,5 +31,4 @@ const printTodos = () => {
 addTaskButton.addEventListener('click', () => {
     addTodo()
     printTodos()
-    
 })
